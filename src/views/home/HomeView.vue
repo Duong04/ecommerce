@@ -1,5 +1,6 @@
 <script setup>
-import TheWelcome from '../../components/TheWelcome.vue'
+import TheWelcome from '../../components/TheWelcome.vue';
+import { BadgeButton } from '@/components/badges';
 </script>
 
 <template>
@@ -32,16 +33,26 @@ import TheWelcome from '../../components/TheWelcome.vue'
         </div>
       </div>
     </div>
-    <div class="py-3 px-56 border-b-2 border-gray-100 flex justify-between">
+    <div class="py-3 px-56 border-b-2 border-gray-100 flex justify-between items-center">
         <div class="w-28">
           <a href="">
             <img src="/images/logo.png" alt="">
           </a>
         </div>
         <div>
-          <div class="border w-96 rounded-md py-2 border-color-brand">
-            <input type="text" placeholder="Search for products" class="ps-2">
+          <div class="border w-[600px] rounded-md p-[3px] h-12 border-color-brand flex items-center justify-between">
+            <input type="text" placeholder="Search for products..." class="px-3 w-full h-full focus:outline-none text-sm">
+            <button class="transition-all duration-700 bg-color-brand text-white w-28 h-full rounded-md text-sm font-medium hover:bg-color-yellow">Search</button>
           </div>
+        </div>
+        <div>
+          <a href="" class="transition-all border-[1px] px-5 py-3 bg-white shadow text-sm text-color-brand flex items-center gap-2 hover:translate-y-[-4px]">Became Vendor <i class="pi pi-arrow-right"></i></a>
+        </div>
+        <div class="flex gap-7">
+          <BadgeButton badge="0" iconClass="pi pi-sync" label="Compare" />
+          <BadgeButton badge="0" iconClass="pi pi-heart" label="Wishlist" />
+          <BadgeButton badge="0" iconClass="pi pi-shopping-cart" label="Cart" />
+          <BadgeButton :isBadge=false iconClass="pi pi-user" label="Account" />
         </div>
     </div>
   </header>

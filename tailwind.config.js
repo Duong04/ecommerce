@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         'color-brand': '#3BB77E',
+        'color-yellow': '#FDC040'
       },
     },
   },
