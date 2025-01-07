@@ -1,6 +1,6 @@
 <script setup>
 import TheWelcome from '../../components/TheWelcome.vue';
-import { BadgeButton } from '@/components/badges';
+import { BadgeButton } from "@/components/badges";
 </script>
 
 <template>
