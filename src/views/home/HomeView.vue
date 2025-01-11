@@ -1,6 +1,7 @@
 <script setup>
-import TheWelcome from '../../components/TheWelcome.vue';
 import { BadgeButton } from "@/components/badges";
+import { Menu } from "@/components/navigations";
+
 </script>
 
 <template>
@@ -66,34 +67,7 @@ import { BadgeButton } from "@/components/badges";
           <a href="" class="text-md"><i class="pi pi-lightbulb text-color-brand"></i> Hot Deals</a>
         </div>
       </div>
-      <menu>
-        <ul class="flex items-center text-md font-[500]">
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Home</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">About</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Shop</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Vendors</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Mega Menu</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Blog</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Pages</router-link>
-          </li>
-          <li>
-            <router-link class="transition-all p-6 duration-500 hover:text-color-brand" href="">Contact</router-link>
-          </li>
-        </ul>
-      </menu>
+      <Menu />
     </nav>
   </header>
   <main>
