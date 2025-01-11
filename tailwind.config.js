@@ -6,7 +6,9 @@ export default {
     extend: {
       colors: {
         'color-brand': '#3BB77E',
-        'color-yellow': '#FDC040'
+        'color-yellow': '#FDC040',
+        'color-heading': "#253D4E",
+        'color-text': "#7E7E7E",
       },
     },
   },
