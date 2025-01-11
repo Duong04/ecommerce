@@ -1,6 +1,3 @@
-<script setup>
-    import { RouterLink } from "vue-router";
-</script>
 <template>
   <menu>
     <ul class="flex items-center text-md font-[500]">
@@ -63,3 +60,7 @@
     </ul>
   </menu>
 </template>
+<script setup>
+import { RouterLink } from "vue-router";
+
+</script>
