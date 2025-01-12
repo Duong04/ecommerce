@@ -1,12 +1,18 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-import { EffectFade, Navigation, Pagination, Parallax, Autoplay } from "swiper/modules";
+import {
+  EffectFade,
+  Navigation,
+  Pagination,
+  Parallax,
+  Autoplay,
+} from "swiper/modules";
 
 const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
 </script>
 <template>
-  <div>
+  <div class="px-4 py-6 rounded-3xl">
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
@@ -22,7 +28,7 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
         clickable: true,
       }"
       :modules="modules"
-      class="mySwiper"
+      class="mySwiper rounded-3xl"
     >
       <swiper-slide>
         <div class="relative">
@@ -99,3 +105,27 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
     </swiper>
   </div>
 </template>
+<style lang="css">
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; 
+  background-color: #fff; 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  justify-content: center;
+  transition: all ease 0.4s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #3BB77E; 
+  color: #fff; 
+}
+
+
+</style>
