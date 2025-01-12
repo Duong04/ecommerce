@@ -2,65 +2,61 @@
   <menu>
     <ul class="flex items-center text-md font-[500]">
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Home</RouterLink
+          to="{ name: 'home' }"
+          >Home</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >About</RouterLink
+          to="{ name: 'home' }"
+          >About</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Shop</RouterLink
+          to="{ name: 'home' }"
+          >Shop</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Vendors</RouterLink
+          to="{ name: 'home' }"
+          >Vendors</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Mega Menu</RouterLink
+          to="{ name: 'home' }"
+          >Mega Menu</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Blog</RouterLink
+          to="{ name: 'home' }"
+          >Blog</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Pages</RouterLink
+          to="{ name: 'home' }"
+          >Pages</router-link
         >
       </li>
       <li>
-        <RouterLink
+        <router-link
           class="transition-all p-6 duration-500 hover:text-color-brand"
-          href=""
-          >Contact</RouterLink
+          to="{ name: 'home' }"
+          >Contact</router-link
         >
       </li>
     </ul>
   </menu>
 </template>
-<script setup>
-import { RouterLink } from "vue-router";
-
-</script>
