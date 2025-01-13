@@ -107,5 +107,16 @@ import { BannerMain } from "@/components/banners";
       </nav>
     </header>
     <BannerMain />
+    <article class="min-[1550px]:px-56 px-4 py-2">
+      <div class="flex items-center gap-14">
+        <h2 class="text-[30px] font-mono font-semibold">Featured Categories</h2>
+        <ul class="flex items-center gap-5">
+          <li><a href="">Cafe & Milk</a></li>
+          <li><a href="">Cafe & Milk</a></li>
+          <li><a href="">Cafe & Milk</a></li>
+          <li><a href="">Cafe & Milk</a></li>
+        </ul>
+      </div>
+    </article>
   </div>
 </template>
