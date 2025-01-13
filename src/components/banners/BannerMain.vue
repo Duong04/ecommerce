@@ -12,7 +12,7 @@ import {
 const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
 </script>
 <template>
-  <div class="px-4 py-6 rounded-3xl">
+  <div class="min-[1550px]:px-56 px-4 py-6 rounded-3xl">
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
@@ -113,12 +113,13 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
   border-radius: 50%; 
   width: 40px; 
   height: 40px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   cursor: pointer; 
   justify-content: center;
   transition: all ease 0.4s;
+  animation: moveDown 0.6s ease;
 }
 
 .swiper-button-next:hover,
@@ -127,5 +128,36 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
   color: #fff; 
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  display: flex !important;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #1f1f1f;
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3BB77E;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 </style>
