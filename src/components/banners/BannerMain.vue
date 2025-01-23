@@ -28,7 +28,8 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
         clickable: true,
       }"
       :modules="modules"
-      class="mySwiper rounded-3xl"
+      id="banner"
+      class="banner rounded-3xl"
     >
       <swiper-slide>
         <div class="relative">
@@ -106,32 +107,10 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
   </div>
 </template>
 <style lang="css">
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000; 
-  background-color: #fff; 
-  border-radius: 50%; 
-  width: 40px; 
-  height: 40px;
+.banner .swiper-button-next,
+.banner .swiper-button-prev {
   display: none;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer; 
-  justify-content: center;
-  transition: all ease 0.4s;
   animation: moveDown 0.6s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #3BB77E; 
-  color: #fff; 
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 16px; 
-  font-weight: bold;
 }
 
 .swiper:hover .swiper-button-next,
@@ -139,14 +118,14 @@ const modules = [EffectFade, Pagination, Navigation, Parallax, Autoplay];
   display: flex !important;
 }
 
-.swiper-pagination-bullet {
+.banner .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
   border: 1px solid #1f1f1f;
   background-color: #fff;
 }
 
-.swiper-pagination-bullet-active {
+.banner .swiper-pagination-bullet-active {
   background-color: #3BB77E;
 }
 

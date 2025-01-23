@@ -2,7 +2,10 @@
 import { BadgeButton } from "@/components/badges";
 import { Menu } from "@/components/navigations";
 import { BannerMain } from "@/components/banners";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { FreeMode, Navigation } from "swiper/modules";
 
+const modules = [FreeMode, Navigation];
 </script>
 
 <template>
@@ -117,6 +120,168 @@ import { BannerMain } from "@/components/banners";
           <li><a href="">Cafe & Milk</a></li>
         </ul>
       </div>
+      <div class="far-featured">
+        <swiper
+          :slidesPerView="10"
+          :spaceBetween="30"
+          :speed="600"
+          :parallax="true"
+          :loop="true"
+          :freeMode="true"
+          :navigation="true"
+          :modules="modules"
+          class="featured"
+        >
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+          <swiper-slide
+            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
+              <img src="/images/featured/cat-13.png" alt="" />
+              <b>Cake & Milk</b>
+              <span>11 items</span>
+            </a>
+          </swiper-slide>
+        </swiper>
+      </div>
     </article>
   </div>
 </template>
+<style lang="css">
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; 
+  background-color: #fff; 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  justify-content: center;
+  transition: all ease 0.4s;
+}
+
+.featured .swiper-button-next,
+.featured .swiper-button-prev {
+  top: 25px;
+  z-index: 99999;
+  left: auto;
+  background-color: #f5f1f1;
+}
+
+.featured .swiper-button-prev {
+  right: 60px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #3BB77E; 
+  color: #fff; 
+}
+
+.far-featured .swiper {
+  padding: 50px 0;
+}
+</style>
