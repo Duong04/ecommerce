@@ -2,10 +2,9 @@
 import { BadgeButton } from "@/components/badges";
 import { Menu } from "@/components/navigations";
 import { BannerMain } from "@/components/banners";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { FreeMode, Navigation } from "swiper/modules";
+import { FeaturedList } from "@/components/featured";
+import { PromotionCard } from "@/components/cards";
 
-const modules = [FreeMode, Navigation];
 </script>
 
 <template>
@@ -121,123 +120,12 @@ const modules = [FreeMode, Navigation];
         </ul>
       </div>
       <div class="far-featured">
-        <swiper
-          :slidesPerView="10"
-          :spaceBetween="30"
-          :speed="600"
-          :parallax="true"
-          :loop="true"
-          :freeMode="true"
-          :navigation="true"
-          :modules="modules"
-          class="featured"
-        >
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide
-            ><a class="flex flex-col items-center bg-[#F2FCE4] p-3">
-              <img src="/images/featured/cat-13.png" alt="" />
-              <b>Cake & Milk</b>
-              <span>11 items</span>
-            </a>
-          </swiper-slide>
-        </swiper>
+        <FeaturedList />
+        <div class="grid grid-cols-3 gap-5">
+          <PromotionCard />
+          <PromotionCard />
+          <PromotionCard />
+        </div>
       </div>
     </article>
   </div>
