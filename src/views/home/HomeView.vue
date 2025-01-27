@@ -3,7 +3,7 @@ import { BadgeButton } from "@/components/badges";
 import { Menu } from "@/components/navigations";
 import { BannerMain } from "@/components/banners";
 import { FeaturedList } from "@/components/featured";
-import { PromotionCard } from "@/components/cards";
+import { PromotionCard, ProductCard } from "@/components/cards";
 
 </script>
 
@@ -110,21 +110,48 @@ import { PromotionCard } from "@/components/cards";
     </header>
     <BannerMain />
     <article class="min-[1550px]:px-56 px-4 py-2">
-      <div class="flex items-center gap-14">
-        <h2 class="text-[30px] font-mono font-semibold">Featured Categories</h2>
-        <ul class="flex items-center gap-5">
-          <li><a href="">Cafe & Milk</a></li>
-          <li><a href="">Cafe & Milk</a></li>
-          <li><a href="">Cafe & Milk</a></li>
-          <li><a href="">Cafe & Milk</a></li>
-        </ul>
+      <div class="py-4">
+        <div class="flex items-center gap-14">
+          <h2 class="text-[30px] font-mono font-semibold">Featured Categories</h2>
+          <ul class="flex items-center gap-5">
+            <li><a href="">Cafe & Milk</a></li>
+            <li><a href="">Cafe & Milk</a></li>
+            <li><a href="">Cafe & Milk</a></li>
+            <li><a href="">Cafe & Milk</a></li>
+          </ul>
+        </div>
+        <div class="far-featured">
+          <FeaturedList />
+          <div class="grid grid-cols-3 gap-5">
+            <PromotionCard />
+            <PromotionCard />
+            <PromotionCard />
+          </div>
+        </div>
       </div>
-      <div class="far-featured">
-        <FeaturedList />
-        <div class="grid grid-cols-3 gap-5">
-          <PromotionCard />
-          <PromotionCard />
-          <PromotionCard />
+      <div class="py-4">
+        <div class="flex items-center justify-between gap-14">
+          <h2 class="text-[30px] font-mono font-semibold">Popular Products</h2>
+          <ul class="flex items-center gap-5">
+            <li><a href="">All</a></li>
+            <li><a href="">Banking Material</a></li>
+            <li><a href="">Fresh Fruits</a></li>
+            <li><a href="">Milks & Dairies</a></li>
+            <li><a href="">Meats</a></li>
+            <li><a href="">Vegatables</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-5 gap-5">
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
+          <product-card />
         </div>
       </div>
     </article>
